@@ -22,7 +22,7 @@ a {
 nav .a .spacer {
     float: left;
 }
-//nav::after {
+nav::after {
     content: "";
     clear: both;
     display: table;
