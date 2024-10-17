@@ -16,10 +16,10 @@ a {
 }
 
 .spacer {
-    padding: 0 1em;
+    padding: 0 2em;
 }
 
-nav .a .spacer {
+nav a, .spacer {
     float: left;
 }
 nav::after {
