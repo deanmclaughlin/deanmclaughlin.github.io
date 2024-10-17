@@ -1,1 +1,1 @@
-Little exercises in HTML.CSS/JavaScript
+Little exercises in HTML/CSS/JavaScript
