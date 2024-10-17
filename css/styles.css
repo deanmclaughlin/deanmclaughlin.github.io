@@ -1,0 +1,51 @@
+* {
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+	margin: 1em;
+	padding: 0em;
+	font-size: 16px;
+	color: rgb(0,0,0);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.spacer {
+    padding: 0 1em;
+}
+
+nav .a .spacer {
+    float: left;
+}
+//nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+button {
+    padding: 1em;
+    text-align: center;
+    border-radius: 15px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.big_blue {
+    font-weight: bold;
+    font-size: 110%;
+    background-color: rgb(47, 84, 154);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+#output {
+   background-color: rgb(240,240,240);
+   padding: 1em 0.5em;    
+}
