@@ -19,15 +19,6 @@ a {
     padding: 0 2em;
 }
 
-nav a, .spacer {
-    float: left;
-}
-nav::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 button {
     padding: 1em;
     text-align: center;
@@ -36,6 +27,15 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+.row {
+    display: flex;
+}
+/*.row::after {
+    content: "";
+    clear: both;
+    display: table;   
+}*/
 
 .big_blue {
     font-weight: bold;
