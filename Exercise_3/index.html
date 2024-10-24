@@ -14,7 +14,7 @@
 <h2>JavaScript validation for empty input field</h2>
 <p>Try to submit the form without entering any text.</p>
 
-<form name="myForm" onsubmit="validateForm(); return false;"
+<form name="myForm" onsubmit="return validForm()"
                     onreset="resetResponse();">
   Name: &nbsp; <input type="text" name="fname">
   
