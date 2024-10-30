@@ -45,9 +45,12 @@ button:hover {
     border-radius: 20px;
 }
 
-#output {
-   background-color: rgb(240,240,240);
-   padding: 1em 0.5em;    
+.big_red {
+    font-weight: bold;
+    font-size: 100%;
+    background-color: rgb(240, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;  
 }
 
 input[type="submit"], input[type="reset"] {
@@ -61,4 +64,13 @@ input[type="submit"], input[type="reset"] {
 }
 input[type="submit"]:hover, input[type="reset"]:hover {
     cursor: pointer;
+}
+
+#output {
+   background-color: rgb(240,240,240);
+   padding: 1em 0.5em;    
+}
+
+#sign-in-para {
+   display: none;
 }
