@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+
+<title>Secure Transaction</title>
+
+</head>
+
+<body onload="resetCart();">
+
+<h1>JavaScript Exercise #4</h1>
+<h2>implementing a password</h2>
+<h3>arrays, if statements, and hiding/showing elements</h3>
+
+<hr>
+<p>Shopping Cart</p>
+<hr>
+
+<p>
+&nbsp;&nbsp;Total cost of goods <br>
+$<input id="total-cost" type="text" placeholder="0">
+
+<span class="spacer"></span>
+
+Discount?
+<input id="discount-pct" size="3" type="text" placeholder="0">%
+</p>
+
+<p>
+&nbsp;&nbsp;Cash tendered <br>
+$<input id="cash-paid" type="text" placeholder="0">
+</p>
+
+<button id="check-out" onclick="myCheckout();">Check Out</button>
+&nbsp;&nbsp;
+<button id="clear-cart" onclick="resetCart();">Empty Cart</button>
+
+<br><br>
+<hr>
+
+<p id="output"></p>
+
+<hr>
+
+<p id="sign-in-para">
+
+User ID <input id="user-id" type="text">
+
+<span class="spacer"></span>
+
+Password <input id="pass-code" type="password">
+
+<br><br>
+<button id="pass-button" class="big_red" onclick="checkUserAndPassword();">Submit</button>
+
+</p>
+
+<script src="./js/secure.js" type="text/javascript"></script>
+
+</body>
+</html>
