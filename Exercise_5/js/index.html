@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+
+<title>JS Survey</title>
+
+</head>
+
+<body onload="resetSurvey();">
+
+<h1>JavaScript Exercise #5</h1>
+<h2>managing a survey</h2>
+<h3>forms, radio-button values, arrays & for loops, global variables</h3>
+
+<hr>
+<p>Vote for a colour</p>
+<hr>
+
+<form id="survey" onsubmit="getRadio('survey', 'colours'); return false;">
+    <p> What is your favourite colour?</p>
+    <br>
+    
+    <input type="radio" name="colours" id="answer1" value="red" onclick="hide('other_colour');">
+    <label for="answer1">red</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer2" value="orange" onclick="hide('other_colour');">
+    <label for="answer2">orange</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer3" value="yellow" onclick="hide('other_colour');">
+    <label for="answer3">yellow</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer4" value="green" onclick="hide('other_colour');">
+    <label for="answer4">green</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer5" value="blue" onclick="hide('other_colour');">
+    <label for="answer5">blue</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer6" value="indigo" onclick="hide('other_colour');">
+    <label for="answer6">indigo</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer7" value="violet" onclick="hide('other_colour');">
+    <label for="answer7">violet</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer8" value="other" onclick="show('other_colour');">
+    <label for="answer8" onclick="show('other_colour');">other</label>
+    &nbsp;
+    <input type="text" id="other_colour" placeholder="please specify">
+</form>
+
+<br>
+
+<hr>
+
+<button id="results" onclick="getRadio('survey', 'colours');">VIEW RESULTS</button>
+<span class="spacer"></span>
+<button id="clear" onclick="resetSurvey();">CLEAR SURVEY</button>
+
+<hr>
+
+<p id="output"></p>
+
+<hr>
+
+<script src="./js/survey.js" type="text/javascript"></script>
+
+</body>
+</html>
