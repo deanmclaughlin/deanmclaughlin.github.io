@@ -1,9 +1,9 @@
-var colours = [];
-var votes = [];
+let colours = [];
+let votes = [];
 
 function getRadio(formID, radioName) {
-    var theForm = document.getElementById(formID);
-    var theButtons = theForm.elements[radioName];
+    let theForm = document.getElementById(formID);
+    let theButtons = theForm.elements[radioName];
 
     let choice = theButtons.value;
     if (choice == "other") {
@@ -83,7 +83,7 @@ function hide(theID) {
 }
 
 function clearGroup(groupName) {
-    var buttons = document.getElementsByName(groupName);
+    let buttons = document.getElementsByName(groupName);
     for (let i=0; i < buttons.length; i++) {
         buttons[i].checked = false;
     }
