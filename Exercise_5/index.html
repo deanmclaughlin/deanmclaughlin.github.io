@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+
+<title>Selections</title>
+
+</head>
+
+<body onload="resetSurvey();">
+
+<h1>A JavaScript survey</h1>
+<h2>tracking votes using radio buttons</h2>
+<h3>radio-button values, arrays & for loops, global variables</h3>
+
+<hr>
+<p>Radio Buttons</p>
+<hr>
+
+<form id="survey">
+    <p> What is your favourite colour?</p>
+    <br>
+    
+    <input type="radio" name="colours" id="answer1" value="red">
+    <label for="answer1">red</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer2" value="orange">
+    <label for="answer2">orange</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer3" value="yellow">
+    <label for="answer3">yellow</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer4" value="green">
+    <label for="answer4">green</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer5" value="blue">
+    <label for="answer5">blue</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer6" value="purple">
+    <label for="answer6">purple</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer7" value="white">
+    <label for="answer7">white</label>
+    <br><br>
+    
+    <input type="radio" name="colours" id="answer8" value="black">
+    <label for="answer8">black</label>
+</form>
+
+<br>
+
+<hr>
+
+<button id="results" onclick="getRadio('survey', 'colours');">RESULTS</button>
+<span class="spacer"></span>
+<button id="clear" onclick="resetSurvey();">CLEAR SURVEY</button>
+
+<hr>
+
+<p id="output"></p>
+
+<hr>
+
+<script src="./js/radio.js" type="text/javascript"></script>
+
+</body>
+</html>
