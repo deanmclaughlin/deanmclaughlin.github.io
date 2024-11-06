@@ -74,3 +74,11 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 #sign-in-para {
    display: none;
 }
+
+#other_colour {
+    color: rgb(240, 0, 0);
+}
+
+/*#other_colour::placeholder {
+    color: rgb(240, 0, 0);
+}*/
