@@ -108,11 +108,13 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     font-weight: bold;
     background-color: rgb(217, 83, 79);
     color: rgb(255, 255, 255);
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
     /* background-color: rgb(220, 0, 0);
     color: rgb(217, 237, 247); */
 }
 
 #popoutput {
     clear: both;
+    margin-top: 4.5em;
+    margin-bottom: 0em;
 }
