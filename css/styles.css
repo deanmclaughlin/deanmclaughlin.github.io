@@ -79,6 +79,40 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     color: rgb(240, 0, 0);
 }
 
-/*#other_colour::placeholder {
-    color: rgb(240, 0, 0);
-}*/
+.popUp {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0vw;
+    top: 0vh;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.results {
+    position: fixed;
+    width: 40%;
+    /*height: 40%;*/
+    left: 30%;
+    top: 25%;
+    
+    background-color: rgb(217, 237, 247);
+    border: 2px solid rgb(230, 0, 0);
+    border-radius: 20px;
+    color: rgb(220, 0, 0);
+    font-weight: bold;
+    padding: 1em;    
+}
+.results button {
+    font-weight: bold;
+    background-color: rgb(217, 83, 79);
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5em;
+    /* background-color: rgb(220, 0, 0);
+    color: rgb(217, 237, 247); */
+}
+
+#popoutput {
+    clear: both;
+}
