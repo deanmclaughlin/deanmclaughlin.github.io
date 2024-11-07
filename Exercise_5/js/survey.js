@@ -16,8 +16,12 @@ function getRadio(formID, radioName) {
         output = "You cast a vote for:  <i>" + choice.toLowerCase() + "</i><br><br>"; 
         addToTotals(choice.toLowerCase());
     }
-
-    document.getElementById("output").innerHTML = output + report();
+    output += report();
+    
+    document.getElementById("popoutput").innerHTML = output;
+    showPopUp();
+    
+    document.getElementById("output").innerHTML = output;
     clearField("other_colour");
     clearGroup("colours");
 }
@@ -105,4 +109,15 @@ function resetSurvey() {
     clearField("other_colour");
     colours = [];
     votes = [];
+}
+
+
+
+function showPopUp() {
+    popup = document.getElementById("popUp");
+    popup.style.display = "block";
+}
+function closePopUp() {
+    popup = document.getElementById("popUp");
+    popup.style.display = "none";
 }
